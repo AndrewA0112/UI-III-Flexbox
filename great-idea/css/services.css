@@ -63,33 +63,25 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* My Code */
+
 body {
-    margin-left: 100px;
-    margin-top: 25px;
-    margin-right: 20px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 1%;
 }
 
-header {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 100px;
-    padding-bottom: 150px;
-    border-bottom: 2px solid black;
-}
+/* Header CSS */
 
-header nav {
-    display: inline-block;
-    margin-bottom: 75px;
-}
-
-header .logo {
-    display: inline-block;
+.navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 header a {
     text-decoration: none;
-    margin-right: 225px;
     color: grey;
 }
 
@@ -97,78 +89,76 @@ header a:hover {
     color: lightgrey;
 }
 
-header h1 {
-    font-size: 800%;
-    display: inline-block;
-    text-align: center;
-    margin-left: 22%;
+header .services-header-img {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.codePic {
-    display: inline-block;
-    margin-left: 250px;
-    width: 20%;
-}
-
-header p {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-    margin-left: 30%;
-}
+/* Article/Main Content CSS */
 
 article {
-    width: 100%;
-    border-bottom: 2px solid black;
-    padding-bottom: 25px;
-    margin-bottom: 50px;
+    border-bottom: 1px black solid;
+    margin-bottom: 2%; 
 }
 
-article .features {
-    display: inline-block;
+article h1 {
+    font-size: 150%;
+}
+
+article .serviceInfo {
+    border-bottom: 1px black solid;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+article .serviceGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article .service {
+    border: 1px black solid;
+    background:whitesmoke;
+    margin-bottom: 2%; 
     width: 49%;
+    padding: 1%;
+}
+article .serviceGrid p {
+    padding-bottom: 1%;
 }
 
-article .about {
-    display: inline-block;
+article button {
+    border-radius: 4px;
+    border: 1px black solid;
+    background: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* Footer CSS */
+
+.footerFacts {
+    display: flex;
+}
+
+.footerChild {
     width: 50%;
-    
 }
 
-.middle-img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.footerUL {
+    list-style-type: square;
+    margin: 3%;
 }
 
-article .services {
-    display: inline-block;
-    width:30%;
+footer li {
+    padding: 1%;
 }
 
-article .product {
-    display: inline-block;
-    width:30%;
-}
-
-article .vision {
-    display: inline-block;
-    width:30%;
-}
-
-footer div {
+.copyright {
     text-align: center;
-}
-/* Services Page CSS */
-
-.navBar {
-	display: flex;
-	border: 1px red solid;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
